@@ -1,4 +1,4 @@
-import React, { useReducer, createContext, useContext, useRef } from 'react'
+import React, { useReducer, createContext, useContext, useRef } from 'react';
 
 const initialTodos = [
     {
@@ -57,7 +57,7 @@ export function TodoProvider({ children }) {
     );
 }
 
-export function useTodoSate() {
+export function useTodoState() {
     const context = useContext(TodoStateContext);
     if (!context) {
         throw new Error('Cannot find TodoProvider');
