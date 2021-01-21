@@ -48,7 +48,7 @@ export function TodoProvider({ children }) {
 
     return (
         <TodoStateContext.Provider value={state}>
-            <TodoDispatchContext.Provider value={state}>
+            <TodoDispatchContext.Provider value={dispatch}>
                 <TodoNextIdContext.Provider value={nextId}>
                     {children}
                 </TodoNextIdContext.Provider>
